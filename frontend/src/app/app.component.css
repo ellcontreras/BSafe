@@ -1,0 +1,16 @@
+.caja-chat {
+	height: auto;
+	overflow: auto;
+
+	max-height: 15em;
+}
+
+img {
+	float: center;
+	height: 120%;
+	width: 120%;
+}
+
+.btn .btn-primary {
+	background-color: #004A9B !important;
+}

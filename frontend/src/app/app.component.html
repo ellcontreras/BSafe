@@ -1,0 +1,33 @@
+<div class="col-md-3"></div>
+
+<div class="col-md-6">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <img src="/assets/img/newproject_1_original.png" alt="">
+  </div>
+  <div class="col-md-4"></div>
+  <br><br><br><br><br>
+  <br><br><br>
+  <div *ngIf="messageError" class=" alert alert-warning">
+      {{ messageError }}
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+      <div class="caja-chat" id="caja">
+
+      </div>
+  <form #prForm="ngForm" (ngSubmit)="onSubmit()">
+    <p>
+      <label>Ingrese su pregunta:</label>
+      <input type="text" #preg="ngModel" name="preg" [(ngModel)]="pregunta" placeholder="¿Cuál es su duda?" class="form-control" required>
+      <span *ngIf="!preg.valid && preg.touched">
+        <div class="alert alert-danger">
+          Es obligatorio ingresar una pregunta
+        </div>
+      </span>
+    </p>
+
+    <input type="submit" value="Realizar pregunta" class="btn btn-primary">
+  </form>
+</div>
+<div class="col-md-3"></div>

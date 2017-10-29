@@ -1,0 +1,19 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Bot para asistencia en caso de fraudes",
+  "private": false,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Luis Fernando Contreras Guerra",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.19.1",
+    "mongoose": "^4.12.4",
+    "nodemon": "^1.12.1"
+  }
+}
